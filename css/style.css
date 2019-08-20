@@ -5,7 +5,7 @@ body {
 	left: 0;
 	font-family: roboto, arial, sans-serif;
 	margin: 0;
-	padding 0;
+	padding: 0;
 	background-color:#333;
 	color: white;
 	box-sizing: border-box;
@@ -43,8 +43,8 @@ body {
 	max-width: 100%;	
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;		
-	grid-row-gap: 0;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 0;
 }
 
 .content [class*="item"] img {
@@ -78,50 +78,6 @@ body {
 	outline: none;
 	display: block;
 }
-
-/*
-.content .item1:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-
-.content .item2:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-
-.content .item3:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-
-.content .item4:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-
-.content .item5:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-
-.content .item6:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-.content .item7:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-.content .item8:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-.content .item9:hover {
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
-}
-*/
 
 .content .item1 {
 	grid-column: 1 / 2;
