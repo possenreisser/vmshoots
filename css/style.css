@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-
 body {
 	top: 0;
 	left: 0;
@@ -16,27 +15,57 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template-areas:
-	'side content'	
+	'menu content'	
 	'footer footer';
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 20vw 1fr;
 	grid-template-rows: 1fr 90px;
+}
+
+.menu {
+	grid-area: menu;
 }
 
 .logo {
 	text-align: center;
+	max-width: 9vw;
+	margin: auto;
+	padding-top: 2.4em;
 }
+
 .logo img {
-	max-width: 100px;
-	margin-top: 40px;
-}
-.menu {
-	grid-area: side;
-	position: fixed;
+	max-width: 100%;
 }
 
 .nav {
-	margin: 10px;
+	margin: 0;
+	max-width: 10vw;
+	padding: 1em;
+	margin: auto;
 }
+.nav ul {
+	list-style-type: none;
+	padding: 0;
+	max-width: 100%;
+}
+
+.nav ul li {
+	margin-bottom: 0.4em;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.6vw;
+	opacity: 0.5;
+}
+
+.nav ul li a:hover {
+	opacity: 1;
+}
+.nav ul li a:active {
+	text-decoration: underline;
+}
+
 
 .content {
 	grid-area: content;
@@ -47,8 +76,13 @@ body {
 }
 
 .content [class*="item"] img {
-	width: 100%;
+	max-width: 100%;
 	object-fit: cover;
+	opacity: 0.9;
+}
+
+.content [class*="item"] img:hover {
+	opacity: 1;
 }
 
 .content [class*="item"] {
@@ -117,19 +151,68 @@ body {
 	text-align: center;
 }
 
-.nav ul {
-	list-style-type: none;
-	margin: 50px 20px;
-	padding: 0;
+
+@media only screen and (max-width: 800px) {
+
+.wrap {
+	grid-template-areas:
+	'menu'
+	'content'
+	'footer';
+	grid-template-columns: auto;
+	grid-template-rows: 200px 1fr 90px;
 }
 
-.nav ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.2em;
+.menu {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	max-width: 4em;
+	padding: 0;
+	margin: 0 4em 0 0;
+}
+
+.nav {
+	padding: 0;
+	margin: 0;
+}
+.nav ul {
+	margin: 20px 40px;
 }
 
 .nav ul li {
-	text-align: center;
-	margin: 0px 0 15px 0;
+	margin: 0;
+	text-align: left;
+}
+
+.nav ul li a{
+	font-size: 1.2em;
+}
+
+.logo img {
+	margin: 0 50px 0 0;
+	max-width: 80px;
+}
+
+.lightbox img {
+	margin-top: 10%;
+}
+}
+@media only screen and (max-width: 470px){
+
+.lightbox img {
+	margin-top: 10%;
+}
+
+.content {
+	height: 99vw;
+}
+.content [class*="item"] {
+	height: 33vw;
+}
 }
