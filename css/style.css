@@ -15,7 +15,7 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template-areas:
-	'menu content'	
+	'menu ninesq'	
 	'footer footer';
 	grid-template-columns: 20vw 1fr;
 	grid-template-rows: 1fr 90px;
@@ -27,9 +27,8 @@ body {
 
 .logo {
 	text-align: center;
-	max-width: 9vw;
-	margin: auto;
-	padding-top: 2.4em;
+	max-width: 7vw;
+	margin: 4em auto;
 }
 
 .logo img {
@@ -62,30 +61,27 @@ body {
 .nav ul li a:hover {
 	opacity: 1;
 }
-.nav ul li a:active {
-	text-decoration: underline;
-}
 
 
-.content {
-	grid-area: content;
+.ninesq {
+	grid-area: ninesq;
 	max-width: 100%;	
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 }
 
-.content [class*="item"] img {
+.ninesq [class*="item"] img {
 	max-width: 100%;
 	object-fit: cover;
 	opacity: 0.9;
 }
 
-.content [class*="item"] img:hover {
+.ninesq [class*="item"] img:hover {
 	opacity: 1;
 }
 
-.content [class*="item"] {
+.ninesq [class*="item"] {
 	display:flex;
 }
 
@@ -112,52 +108,71 @@ body {
 	display: block;
 }
 
-.content .item1 {
+.ninesq .item1 {
 	grid-column: 1 / 2;
 }
-.content .item2 {
+.ninesq .item2 {
 	grid-column: 2 / 3;
 }
-.content .item3 {
+.ninesq .item3 {
 	grid-column: 3 / 4;
 }
-.content .item4 {
+.ninesq .item4 {
 	grid-column: 1 / 2;
 }
-.content .item5 {
+.ninesq .item5 {
 	grid-column: 2 / 3;
 }
-.content .item6 {
+.ninesq .item6 {
 	grid-column: 3 / 4;
 }
-.content .item7 {
+.ninesq .item7 {
 	grid-column: 1 / 2;
 }
-.content .item8 {
+.ninesq .item8 {
 	grid-column: 2 / 3;
 }
-.content .item9 {
+.ninesq .item9 {
 	grid-column: 3 / 4;
 }
 
 .footer {
 	grid-area: footer;
 	align-self: end;
-	margin: 20px;
-
 }
 
 .footer p {
 	text-align: center;
 }
 
+.contactme {
+	border: 2px solid white;
+	padding: 2em 4em;
+	text-align: center;
+	margin: auto;
+}
+
+[class*="frame"] {
+	border: 2px solid white;
+	margin: auto;
+	padding: 0.4em;
+	background-color: #333;
+}
+
+[class*="frame"]:hover {
+	background-color: red;
+}
+
+h4 {
+	font-size: 1.6em;
+}
 
 @media only screen and (max-width: 800px) {
 
 .wrap {
 	grid-template-areas:
 	'menu'
-	'content'
+	'ninesq'
 	'footer';
 	grid-template-columns: auto;
 	grid-template-rows: 200px 1fr 90px;
@@ -209,10 +224,10 @@ body {
 	margin-top: 10%;
 }
 
-.content {
-	height: 99vw;
+.ninesq {
+	height: 100vw;
 }
-.content [class*="item"] {
+.ninesq [class*="item"] {
 	height: 33vw;
 }
 }
