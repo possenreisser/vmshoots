@@ -74,6 +74,7 @@ body {
 .ninesq [class*="item"] {
   display: flex;
   overflow: hidden;
+  aspect-ratio: 1 / 1;
 }
 
 .ninesq [class*="item"] img {
