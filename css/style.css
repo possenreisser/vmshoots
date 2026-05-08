@@ -113,31 +113,32 @@ body {
 
 .frames {
   padding: 2em;
-  outline: 2px solid white;
-  outline-offset: 8px;
   box-shadow:
-    0 0 0 10px #333,
-    0 0 0 12px white,
-    0 0 0 20px #333,
-    0 0 0 22px white,
-    0 0 0 30px #333,
-    0 0 0 32px white,
-    0 0 0 40px #333,
-    0 0 0 42px white;
+    0 0 0 8px #333,
+    0 0 0 10px white,
+    0 0 0 18px #333,
+    0 0 0 20px white,
+    0 0 0 28px #333,
+    0 0 0 30px white,
+    0 0 0 38px #333,
+    0 0 0 40px white,
+    0 0 0 48px #333,
+    0 0 0 50px white;
 }
 
 .frames:hover {
-  outline-color: #ED1C24;
   box-shadow:
-    0 0 0 10px #1a1a1a,
-    0 0 0 12px #ED1C24,
-    0 0 0 20px #222,
-    0 0 0 22px #ff4444,
-    0 0 0 30px #2a2a2a,
-    0 0 0 32px #ff8800,
-    0 0 0 40px #333,
-    0 0 0 42px #ffcc00;
-  transition: box-shadow 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), outline-color 0.3s ease;
+    0 0 0 8px #1a1a1a,
+    0 0 0 10px #ED1C24,
+    0 0 0 18px #222,
+    0 0 0 20px #ff4444,
+    0 0 0 28px #2a2a2a,
+    0 0 0 30px #ff8800,
+    0 0 0 38px #333,
+    0 0 0 40px #ffcc00,
+    0 0 0 48px #333,
+    0 0 0 50px white;
+  transition: box-shadow 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .contactme {
