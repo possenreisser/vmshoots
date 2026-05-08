@@ -116,14 +116,14 @@ body {
   outline: 2px solid white;
   outline-offset: 8px;
   box-shadow:
-    0 0 0 16px #333,
-    0 0 0 18px white,
-    0 0 0 26px #333,
-    0 0 0 28px white,
-    0 0 0 36px #333,
-    0 0 0 38px white,
-    0 0 0 46px #333,
-    0 0 0 48px white;
+    0 0 0 10px #333,
+    0 0 0 12px white,
+    0 0 0 20px #333,
+    0 0 0 22px white,
+    0 0 0 30px #333,
+    0 0 0 32px white,
+    0 0 0 40px #333,
+    0 0 0 42px white;
 }
 
 .contactme {
@@ -190,4 +190,4 @@ h4 {
     margin: 0 50px 0 0;
     max-width: 80px;
   }
-}
+}	
